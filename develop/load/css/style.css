@@ -50,6 +50,18 @@ h2, h3{
     color: rgba(251,251,241,1);
 }
 
+
+/* 各コンテンツ */
 .height100{
-    height: 100vh;
+    min-height: 90vh;
+}
+
+.login_form{
+    width: 80%;
+    max-width: 500px;
+    padding-top: 80px;
+}
+
+.btn_clr{
+    background-color: #2eaaaa;
 }

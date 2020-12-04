@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
-<title>{{サービス名}}</title>
+<title>サービス名</title>
 <meta name="description" content="サイトの説明文">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -17,13 +17,13 @@
 <header>
 <nav class="navbar navbar-expand-md navbar-dark">
     <div class="container-fluid">
-        <h3 class="text-white">{{サービス名}}</h3>
+        <h3 class="text-white">サービス名</h3>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span> </button>
 
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="#sec1" class="nav-link">menu</a></li>
-                <li class="nav-item"><a href="#sec2" class="nav-link">menu</a></li>
+                <li class="nav-item"><a href="./login.html" class="nav-link">Log in</a></li>
+                <li class="nav-item"><a href="./form.html" class="nav-link">form</a></li>
             </ul>
         </div>
      </div>    
@@ -32,12 +32,9 @@
 <main>
 
 <!------------------------------------------------------------------------------------------------------------------>
-<section id="sec3">
-    <div class="height100">
-            qqq
-            
-        </div><!-- .container -->    
-    </section>
+
+{% block content %}
+{% endblock %}
 
 <!------------------------------------------------------------------------------------------------------------------>
 <!-- javascript はここから -->

@@ -6,40 +6,44 @@
         <div class="login_form mx-auto">
            
               <form class="needs-validation" action="./form_result" method="POST">
+                
                 <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <label for="lastName">氏名</label>
-                    <input type="text" class="form-control" name="fname" id="lastName" placeholder="" value="" required>
-                   
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <label for="firstName">名前</label>
-                    <input type="text" class="form-control" name="sname" id="firstName" placeholder="" value="" required>
+                  <div class="col-md-7 mb-3">
+                    <label for="country">受診科</label>
+                    <select class="custom-select d-block w-100" id="country" name="choice_expert" required>
+                      <option value="">選択してください</option>
+                      <option>内科</option>
+                      <option>外科</option>
+                      <option>眼科</option>
+                      <option>耳鼻科</option>
+                    </select>
                   </div>
                 </div>
-        
-                <div class="mb-3">
-                  <label for="age">年齢</label>
-                  <input type="number" class="form-control" id="age" name="age" required>
-                </div>
-                
-                <div class="d-block my-3">
-                    <label for="address">性別</label>
-                    <div class="row ml-2">
-                        <div class="custom-control custom-radio mr-3">
-                        <input id="male" name="gender" type="radio" class="custom-control-input"  required>
-                        <label class="custom-control-label" for="male">男性</label>
-                        </div>
 
-                        <div class="custom-control custom-radio">
-                        <input id="female" name="gender" type="radio" class="custom-control-input" required>
-                        <label class="custom-control-label" for="female">女性</label>
-                        </div>
+                <div class="d-block my-3">
+                  <label for="address">受診形態</label>
+                  <div class="row ml-2">
+                      <div class="custom-control custom-radio mr-3">
+                      <input id="visit" name="online_or_visit" type="radio" value="1" class="custom-control-input"  required>
+                      <label class="custom-control-label" for="visit">対面</label>
+                      </div>
+
+                      <div class="custom-control custom-radio">
+                      <input id="online" name="online_or_visit" type="radio" value="0" class="custom-control-input" required>
+                      <label class="custom-control-label" for="online">オンライン</label>
+                      </div>
                     </div>
-                </div>
-                
-                <button class="btn btn_clr btn-lg btn-block" type="submit">送信</button>
+                  </div>
+    
+                  <div class="row mb-3">
+                      <input type="hidden" name="address_x" id="address_x" >
+                      <input type="hidden" name="address_y" id="address_y" >
+                  </div>
+                  <script type="text/javascript" src="../load/js/script.js"></script>
+                  
+                <button class="btn btn_clr btn-lg btn-block text-white" type="submit">送信</button>
               </form>
+
     </div>
     </div><!-- .container -->    
 </section>

@@ -24,7 +24,7 @@ def form():
 
 @app.route('/form_result', methods=['GET', 'POST'])
 def form_result():
-    return "email：" + request.form["age"] 
+    return "email：" + request.form["address_x"] + request.form["address_y"] 
 
 
 if __name__ == '__main__':
